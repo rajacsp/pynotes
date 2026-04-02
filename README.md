@@ -31,7 +31,12 @@ change the necessary changes to update:
 ```
 python make.py
 
+# Only for Linux/Mac
 PELICAN_ENV=local pelican content
+
+# Only for Windows
+set PELICAN_ENV=local
+pelican content
 
 pelican --listen
     this will run the local server
@@ -42,6 +47,11 @@ pelican --listen
 ```
 python make.py
 
+# Only for Linux/Mac
+pelican content
+
+# Only for Windows
+set PELICAN_ENV=local
 pelican content
 
 git add .
